@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Institutional Corporate Palette */
+  --color-corporate-navy: #0f172a;
+  --color-corporate-blue: #1e3a8a;
+  --color-corporate-light: #f8fafc;
+  --color-corporate-border: #e2e8f0;
+  --color-corporate-text: #334155;
+  --color-corporate-muted: #64748b;
+  
+  --color-success: #059669; /* Banking Green */
+  --color-danger: #e11d48;  /* Alert Red */
+  --color-warning: #d97706; /* Warning Orange */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-corporate-light);
+  color: var(--color-corporate-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Professional Corporate Background */
+.corporate-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(circle at top right, #eff6ff 0%, #f8fafc 100%);
+}
+
+/* Institutional Clean Card */
+.corporate-card {
+  background: #ffffff;
+  border: 1px solid var(--color-corporate-border);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.025);
+  transition: all 0.2s ease-in-out;
+}
+
+.corporate-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  transform: translateY(-2px);
+  border-color: #cbd5e1;
+}
+
+/* Clean Header/Banner styled for Banks */
+.bank-header-banner {
+  background: linear-gradient(to right, var(--color-corporate-navy), var(--color-corporate-blue));
+  color: #ffffff;
+  border-bottom: 4px solid #38bdf8;
+}
+
+/* Action Buttons */
+.btn-primary {
+  background-color: var(--color-corporate-blue);
+  color: #ffffff;
+  border: 1px solid var(--color-corporate-blue);
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+.btn-primary:hover {
+  background-color: #1e40af;
+  box-shadow: 0 4px 6px -1px rgba(30, 58, 138, 0.2);
+}
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: var(--color-corporate-text);
+  border: 1px solid var(--color-corporate-border);
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+.btn-secondary:hover {
+  background-color: #f1f5f9;
+  color: var(--color-corporate-navy);
+}
+
+/* Custom Scrollbar (Subtle) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

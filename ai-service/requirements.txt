@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pdfplumber
+pandas
+reportlab
+python-multipart
+requests
+google-genai
+python-dotenv
+groq

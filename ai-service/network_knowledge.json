@@ -1,0 +1,39 @@
+{
+  "suspicious_directors": [
+    {
+      "name": "Rajesh Gupta",
+      "associated_entities": ["Shell-Logistics-India", "Rapid-Money-Laundering"],
+      "last_incident": "2023-11-12",
+      "risk_category": "Serial Defaulter"
+    },
+    {
+      "name": "Vikram Malhotra",
+      "associated_entities": ["Malhotra & Sons (Defaulted)"],
+      "last_incident": "2022-05-15",
+      "risk_category": "Legal Action Pending"
+    },
+    {
+      "name": "Anil Verma",
+      "associated_entities": ["Verma Exports (Under SEBI investigation)"],
+      "last_incident": "2024-01-10",
+      "risk_category": "Governance Risk"
+    }
+  ],
+  "associated_addresses": [
+    {
+      "address": "Nariman Point, Mumbai",
+      "flag": "Potential Virtual Office Hub (40+ linked entities)",
+      "risk_level": "Medium"
+    },
+    {
+      "address": "DLF Cyber City, Gurgaon",
+      "flag": "High-Traffic Corporate Hub (Multiple Shell Scams Reported)",
+      "risk_level": "Low-Moderate"
+    },
+    {
+      "address": "Sector 62, Noida",
+      "flag": "Associated with Circular Trading Networks during GST Audit",
+      "risk_level": "High"
+    }
+  ]
+}
